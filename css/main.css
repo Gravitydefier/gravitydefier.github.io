@@ -1,0 +1,422 @@
+/*view buttons*/
+a {
+	text-decoration: none;
+}
+a:visited{
+	color:white
+}
+
+#sidebar {
+	height: 2800px;
+}
+
+select {
+	background-color: #2E2E2E;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	height: 35px;
+	width: 200px;
+}
+
+option:hover {
+	background-color: white;
+}
+
+.view-sort-buttons a:nth-child(2) {
+	background: url('../img/icons/recent_icon_black.png');
+	background-size: 95%;
+}
+
+.view-sort-buttons a:nth-child(2):hover {
+	background: url('../img/icons/recent_icon_white_filled.png');
+	background-size: 95%;
+}
+
+.view-sort-buttons a:nth-child(3) {
+	background: url('../img/icons/lowestfirst_icon_black.png');
+	background-size: 95%;
+}
+
+.view-sort-buttons a:nth-child(3):hover {
+	background: url('../img/icons/lowestfirst_icon_white_filled.png');
+	background-size: 95%;
+}
+
+.view-sort-buttons a:nth-child(4) {
+	background: url('../img/icons/highestfirst_icon_black.png');
+	background-size: 95%;
+}
+
+.view-sort-buttons a:nth-child(4):hover {
+	background: url('../img/icons/highestfirst_icon_white_filled.png');
+	background-size: 95%;
+	/*background-color: blue;*/
+}
+
+.view-sort-buttons a{
+	display: inline-block;
+	background-size: 95%;
+	background-repeat: no-repeat;
+	background-position: top;
+	width: 75px; 
+	height: 75px;
+	text-indent: -9999px;
+	margin: 3px;
+}
+
+
+#price form{
+	margin-left: 0;
+	margin-top: -45px;
+}
+
+#price input{
+	margin: 20px;
+	margin-top: 55px;
+	height: 20px;
+	width: 90px;
+	z-index: 10;
+}
+
+#price form:nth-child(3) input{
+	border-radius: 5px;
+	background: #2E2E2E;
+	color: white;
+	border-style: none;
+	margin-top: 100px;
+	height: 30px;
+	width: 100px;
+}
+
+#price form:nth-child(3) input:hover{
+	background: #878787;
+	color: #101010;
+}
+
+#site-info {
+	margin-top: 140px;
+}
+
+/*main page*/
+
+section {
+	position: relative;
+    top: 128px; 
+    right: 0;
+    bottom: 0;
+    margin-top: -128px;
+    transition: left 0.5s ease;
+    z-index: 0;
+}
+
+.page-nav {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.page-nav ul{
+	list-style-type: none;
+	background: #505050;
+	padding: 10px;
+	width: 40%;
+	margin-left: 15%;
+	border-radius: 5px;
+}
+
+.page-nav ul li{
+	display: inline;
+	font-size: 1.1em;
+	margin: 10px;
+	background: #505050;
+	padding: 8px 15px 8px 15px;
+	border-radius: 3px;
+}
+
+.page-nav ul li:hover{
+	display: inline;
+	margin: 10px;
+	background: #878787;
+	color: #101010;
+	border-radius: 3px;
+}
+
+.page-nav ul li a:hover{
+	display: inline;
+	background: #878787;
+	color: #101010;
+}
+
+.single-listing {
+	color: black;
+	background: #3f3f3f;
+	border-radius: 5px;
+	margin: 15px;
+	width: 70%;
+	transition: width 0.5s ease;
+}
+
+#toggle-sidebar:checked ~ main section {
+	left: 10%;
+}
+
+#toggle-sidebar:checked ~ main section .single-listing{
+	width: 80%;
+}
+
+#toggle-sidebar:checked ~ main section .page-nav{
+	width: 100%;
+	margin-left: 5%;
+}
+
+.listing-title {
+	position: absolute;
+	width: 30%;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 45px;
+}
+
+.listing-price {
+	position: absolute;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 85px;
+	margin-left: 45px;
+}
+
+.listing-location {
+	position: absolute;
+	font-size: 1.2em;
+	margin-top: 87px;
+	margin-left: 185px;
+}
+
+.listing-favorite {
+	position: absolute;
+	background: url('../img/icons/favorite.png');
+	background-size: 95%;
+	background-repeat: no-repeat;
+	background-position: top;
+	width: 40px; 
+	height: 40px;
+	text-indent: -9999px;
+	margin-top: 6px;
+	margin-left: -2px;
+}
+
+.listing-time {
+	color: #B9B9B9;
+	position: absolute;
+	margin-top: 122px;
+	margin-left: 45px;
+}
+
+.listing-time:visited {
+	color: #afafaf;
+}
+
+.item-description {
+	color: #2E2E2E;
+	display: inline;
+	text-decoration: none;
+	font-weight: bold;
+} 
+
+/*bike image*/
+.single-listing .product-image {
+	margin: 8px;
+	width: 180px;
+}
+
+/*main listing ends here*/
+
+
+@media(max-width: 1225px) {
+	.page-nav ul{
+		width: 50%;
+		margin-left: 10%;
+	}
+
+	
+
+
+}
+
+@media (max-width: 1100px) {
+	.single-listing {
+		color: black;
+		background: #3f3f3f;
+		border-radius: 5px;
+		margin: 15px;
+		width: 60%;
+		transition: width 0.5s ease;
+	}
+
+	.page-nav ul{
+		width: 50%;
+		margin-left: 5%;
+	}
+
+	#toggle-sidebar:checked ~ main section .page-nav{
+		margin-left: 10%;
+	}
+
+	
+}
+
+@media (max-width: 990px) {
+	.page-nav ul{
+		width: 50%;
+		margin-left: 5%;
+	}
+
+	.page-nav ul li{
+		padding: 8px 5px 8px 5px;
+	}
+
+	#toggle-sidebar:checked ~ main section .page-nav{
+		margin-left: 10%;
+	}
+}
+
+@media (max-width: 700px) {
+	.page-nav ul{
+		width: 44%;
+		margin-left: 5%;
+	}
+
+	.page-nav ul li{
+		padding: 0;
+		margin: 0;
+	}
+
+	.page-nav ul li:hover {
+		padding: 0;
+		margin: 0;
+		}
+
+	#toggle-sidebar:checked ~ main section .page-nav{
+		margin-left: 15%;
+	}
+}
+
+@media (max-width: 600px) {
+	.page-nav ul{
+		position: relative;
+		margin-left: 20%;
+	}
+
+	#toggle-sidebar:checked ~ main section {
+		left: 20px;
+	}
+
+	#toggle-sidebar:checked ~ main section .single-listing{
+		width: 70%;
+	}
+
+	#toggle-sidebar:checked ~ main section .page-nav{
+		margin-left: 0%;
+	}
+
+
+
+	.single-listing .product-image {
+		position: relative;
+		margin-left: 4%;
+		width: 92%;
+		text-align: center;
+	}
+
+	.single-listing {
+		position: relative;
+		color: black;
+		background: #3f3f3f;
+		border-radius: 5px;
+		left: 5%;
+		width: 70%;
+		transition: width 0.5s ease;
+	}
+
+	
+	.listing-title {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		width: 90%;
+		font-size: 1.2em;
+		font-weight: bold;
+		margin-top: 0px;
+		margin-left: 10px;
+	}
+
+	.listing-price {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		width: 90%;
+		font-size: 1.2em;
+		font-weight: bold;
+		margin: auto;
+		padding: 0.5em;
+	}
+
+
+	.listing-location {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		width: 90%;
+		font-size: 1.2em;
+		margin: auto;
+		margin-left: 10px;
+		/*padding: 0.3em;*/
+	}
+
+	.listing-favorite {
+		position: absolute;
+		background: url('../img/icons/favorite.png');
+		margin-left: -40px;
+		display: none;
+		text-align: center;
+		background-size: 95%;
+		background-repeat: no-repeat;
+		background-position: top;
+		width: 40px; 
+		height: 40px;
+		/*margin: 3px;*/
+		
+		margin: auto;
+	}
+
+	.listing-time {
+		color: #B9B9B9;
+		position: relative;
+		text-align: center;
+		display: inline-block;
+		width: 90%;
+		padding: 0.5em;
+		margin: auto;
+	}
+
+	.listing-time:visited {
+		color: #afafaf;
+	}
+
+	.item-description {
+		color: #2E2E2E;
+		display: inline;
+		/*margin-left: 10px;*/
+		text-decoration: none;
+		font-weight: bold;
+		/*margin-top: 50px;*/
+	} 
+
+	#sidebar {
+		height: 5850px;
+	}
+
+	
+}

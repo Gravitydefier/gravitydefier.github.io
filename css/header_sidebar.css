@@ -1,0 +1,284 @@
+body {
+	font-family: sans-serif;
+	height: 100%;
+	width: 100%;
+	background-color: #DBD2C8;
+	/*background: #D1C2A7;*/
+	margin: 0;
+	overflow-x:hidden; /*NASTY! BAD ME!*/
+}
+
+a {
+	color: white;
+}
+
+/*header bg*/
+#top-header {
+	background: #3F3F3F;
+	padding-bottom: 11px;
+}
+
+/*Icon*/
+#top-header-icon {
+	padding-left: 45px;
+	margin-left: 770px;
+	width: 200px;
+}
+
+/*search bar*/
+form {
+	position: absolute;
+	width: 100%;
+	margin-top: -65px;
+	margin-left: 35px;
+	padding-bottom: 15px;
+	margin-bottom: -50px;
+}
+
+.search {
+	margin-left: 266px;
+	padding:8px 15px;
+	background: white;
+	border:0px solid #dbdbdb;
+	width: 50%;
+}
+
+.button {
+	position: relative;
+	padding: 6px 15px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	left: -8px;
+	border: 2px solid #2E2E2E;
+	background-color: #2E2E2E;
+	color: #fafafa;
+}
+
+.button:hover {
+	background-color: #878787;
+	border: 2px solid #878787;
+	color: #101010;
+}
+
+#toggle-searchbar{
+	display:none;
+}
+
+#toggle-searchbar-checkbox {
+	margin-left: -900px;
+}
+
+/*sidebar bg*/
+#sidebar {
+	background: #585450;
+	width: 300px;
+	color: white;
+	text-align: center;
+	height: 1200px;
+
+/* animation is here*/
+	position: absolute;
+    top: 128px;
+    left: 300px;
+    margin-left: -300px;
+    transition: left 0.5s ease;
+    z-index: 0;
+
+}
+
+section {
+	position: absolute;
+    top: 128px; /*this one*/
+    left: 300px;
+    right: 0;
+    bottom: 0;
+    transition: left 0.5s ease;
+    z-index: 0;
+}
+
+#toggle-sidebar:checked ~ #sidebar {
+	left: 0;
+}
+
+#toggle-sidebar:checked ~ section {
+	left: 0;
+}
+
+#toggle-sidebar{
+    display:none;
+    position:absolute;
+}
+
+#toggle-checkbox {
+	position:absolute;
+	left: 9000px;
+}
+
+#toggle-sidebar + label{
+	position: absolute;
+    background: url('../img/icons/hamburger_light.png');
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    top: 128px;
+    padding: 0 0 0 0px;
+}
+
+#toggle-sidebar:checked + label:hover{
+	position: absolute;
+    background: url('../img/icons/hamburger_light_hover.png');
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    top: 128px;
+    padding: 0 0 0 0px;
+}
+
+#toggle-sidebar + label:hover {
+    background: url('../img/icons/hamburger_dark_hover.png');
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+#toggle-sidebar:checked + label {
+	background: url('../img/icons/hamburger_dark.png');
+	background-size: 40px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+	
+    padding: 0 0 0 0px;
+}
+
+/* animation ends here*/
+#sidebar h1{
+	margin-top: 40px;
+}
+
+#sidebar li {
+	list-style-type: none;
+	margin-left: -50px;
+}
+
+/*post buttons*/
+#post-buttons a{
+	display:block;
+	border-radius: 5px;
+	font-family: Arial;
+	font-size: 1.25em;
+	background: #2E2E2E;
+	margin: 8px 30px 8px 30px;
+	line-height: 2.5em;
+	text-decoration: none;
+	color: white;
+}
+
+#post-buttons a:hover {
+	background: #878787;
+	color: #101010;
+	/*text-decoration: none;*/
+}
+
+#site-info a:link {
+	color: white;
+	text-decoration: none;
+}
+
+#site-info a:hover {
+	color: #8E8E8E;
+	text-decoration: none;
+}
+
+.step-nav {
+	position: relative;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.step-nav h2 {
+	text-align: center;
+	font-size: 1.6em;
+	margin-right: 3.5%;
+}
+
+.step-nav li {
+	list-style-type: none;
+	font-size: 1.2em;
+	margin-top: -60px;
+}
+
+.step-nav li a{
+	text-decoration: none;
+	color: black;
+}
+
+.step-nav li a:hover{
+	text-decoration: none;
+	color: #8E8E8E;
+}
+
+.step-nav li:nth-child(1) {
+	background: url('../img/icons/stepnav_check_full.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100px;
+	position: absolute;
+	display: block;
+	padding-top: 70px;
+	left: 25%;
+	top: 140px;
+}
+
+.step-nav li:nth-child(1):hover {
+	background: url('../img/icons/stepnav_check_empty.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100px;
+	
+}
+
+
+.step-nav li:nth-child(2) {
+	background: url('../img/icons/stepnav_check_full.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100px;
+	position: absolute;
+	display: block;
+	padding-top: 70px;
+	left: 45%;
+	top: 140px;
+}
+
+.step-nav li:nth-child(2):hover {
+	background: url('../img/icons/stepnav_check_empty.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100px;
+	
+}
+
+.step-nav li:nth-child(3) {
+	background: url('../img/icons/stepnav_full.png');
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100px;
+	position: absolute;
+	display: block;
+	padding-top: 50px;
+	left: 65%;
+	top: 140px;
+}
+
+
+/*template ends here*/
+
+

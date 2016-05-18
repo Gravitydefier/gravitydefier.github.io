@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Main Gallery</title>
+		<link type="text/css" rel="stylesheet" href="css/header_sidebar.css"/>
+		<link type="text/css" rel="stylesheet" href="css/grid_template.css"/>
+		<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	</head>
+
+	<body>
+
+		<!-- This part of the html is the top header of the page. It has an id of #top-header -->
+		<header id="top-header">
+
+			<input id="toggle-searchbar" type="checkbox"/>
+				<label for="toggle-searchbar"><span id="toggle-searchbar-checkbox">toggle searchbar</span></label>
+				
+			<a href="index.html" title="Main Page">
+				<img id="top-header-icon" src="img/icons/site_icon_white.png" alt="Website icon">
+			</a>
+
+			
+			<form id="searchbar">
+				<input class="search" type="text" placeholder="search" required>
+				<input class="button" type="button" value="search">
+			</form>
+		</header>
+
+		<input id="toggle-sidebar" type="checkbox"/>
+				<label for="toggle-sidebar"><span id="toggle-checkbox">toggle sidebar</span></label>
+
+		<!-- This part of the html contains the sidebar. It has an id of #sidebar -->
+
+		<aside id="sidebar">
+			<h1>For Sale</h1>
+
+			<nav id="post-buttons">
+				<a href="categories.html" title="Post">Post</a>
+				<a href="index.html" title="Main Page">My Account</a>
+				<a href="index.html" title="Main Page">Favorites</a>
+			</nav>
+
+			<!-- <div class="view-sort-buttons">
+				<h2>View</h2>
+			 			<a href="index.html" title="Main Page">thumbnail view</a>
+			 			<a href="index.html" title="Main Page"><img src="img/icons/galleryview_icon_white.png" alt="gallery view"></a>
+			 			<a href="index.html" title="Main Page"><img src="img/icons/listview_icon_black.png" alt="list view"></a>
+		 	</div> -->
+
+			
+
+			<div id="select-category">
+				<h2>Category</h2>
+
+				<select>
+					<option value="Belcarra">Appliances</option>
+					<option value="Burnaby">Bicycles</option>
+					<option value="Coquitlam">Books</option>
+					<option value="Delta">Clothing</option>
+					<option value="Langley">Collectibles</option>
+					<option value="Maple Ridge">Electronics</option>
+					<option value="New Westminster">Free</option>
+					<option value="North Vancouver">Furniture</option>
+					<option value="Pitt Meadows">Household</option>
+					<option value="Port Coquitlam">Materials</option>
+					<option value="Port Moody">Sporting Goods</option>
+					<option value="Richmond">Tickets</option>
+					<option value="Surrey">Tools</option>
+					<option value="Tsawwassen">Toys and Games</option>
+					<option value="Vancouver">Vehicles</option>
+					<option value="West Vancouver">Video Games</option>
+					<option value="White Rock">Other</option>
+				</select>
+			</div>
+
+			<div id="select-location">
+				<h2>Location</h2>
+				<select>
+					<option value="Belcarra">Belcarra</option>
+					<option value="Burnaby">Burnaby</option>
+					<option value="Coquitlam">Coquitlam</option>
+					<option value="Delta">Delta</option>
+					<option value="Langley">Langley</option>
+					<option value="Maple Ridge">Maple Ridge</option>
+					<option value="New Westminster">New Westminster</option>
+					<option value="North Vancouver">North Vancouver</option>
+					<option value="Pitt Meadows">Pitt Meadows</option>
+					<option value="Port Coquitlam">Port Coquitlam</option>
+					<option value="Port Moody">Port Moody</option>
+					<option value="Richmond">Richmond</option>
+					<option value="Surrey">Surrey</option>
+					<option value="Tsawwassen">Tsawwassen</option>
+					<option value="Vancouver">Vancouver</option>
+					<option value="West Vancouver">West Vancouver</option>
+					<option value="White Rock">White Rock</option>
+				</select>
+			</div>
+
+			<div class="view-sort-buttons">
+				<h2>Sort By</h2>
+				<a href="index.html" title="Main Page">Most recent</a>
+				<a href="index.html" title="Main Page">Lowest to highest price</a>
+				<a href="index.html" title="Main Page">Highest to lowest price</a>
+			</div>
+
+			<div id="price">
+				<h2>Price</h2>
+				<form>
+					<input  type="text" placeholder=" lowest($)">
+					<input  type="text" placeholder=" highest($)">
+				</form>
+
+				<form action="index.html">
+					<input type="submit">
+				</form>
+			</div>
+
+			<nav id="site-info">
+				<a href="index.html" title="Main Page"><h2>Site Info</h2></a>
+				<ul>
+					<li><a href="index.html" title="Main Page">safety tips</a></li>
+					<li><a href="index.html" title="Main Page">prohibited items</a></li>
+					<li><a href="index.html" title="Main Page">product recalls</a></li>
+					<li><a href="index.html" title="Main Page">avoiding scams</a></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<!-- Each div block corresponds to a single listing. They are all the same for easy editing. Check out the other class names to see which ones you can edit on your css. This whole gallery of listings has an id of #main-listing -->
+		<main>
+			<section id="center-page">
+
+				<div class="page-nav">
+					<ul>
+						<li><a href="index.html" title="page 1">1</a></li>
+						<li><a href="index.html" title="page 2">2</a></li>
+						<li><a href="index.html" title="page 3">3</a></li>
+						<li><a href="index.html" title="page 4">4</a></li>
+						<li><a href="index.html" title="choose pages">...</a></li>
+						<li><a href="index.html" title="page 10">10</a></li>
+						<li><a href="index.html" title="next page">next</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike1.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">Mountain bike for sale</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$1200.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Kitsilano</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 1 hour ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike2.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">21sp mountain bike with disc brake (NEW)</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$900.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Vancouver</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 2 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike3.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">My bike</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$130.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Burnaby</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 3 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike4.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">Need to get rid of my bike</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$210.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Kitsilano</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 3 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike5.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">Good bike (NEW)</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$300.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Vancouver</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 6 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike6.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">My bike</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$130.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Burnaby</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 8 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike7.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">Mountain bike for sale</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$600.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Kitsilano</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 9 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike8.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">For sale: this bike</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$200.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Burnaby</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 12 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike9.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">Mountainbike (REFURBISHED)</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$300.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Kitsilano</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 16 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike10.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">Mountain bike for sale</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$1200.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Kitsilano</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 17 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike11.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">Need to get rid of my bike</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$210.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Kitsilano</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 20 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike12.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">For sale: this bike</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$200.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Burnaby</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 23 hours ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike13.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">Mountainbike (REFURBISHED)</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$300.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Kitsilano</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 1 day ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike14.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">My bike</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$130.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Burnaby</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 1 day ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike15.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">Mountain bike for sale</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$1200.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Kitsilano</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 1 day ago</a>
+				</div>
+
+				<div class="single-listing">
+					<a href="listing.html" title="Item Listing">
+						<img  class="product-image" src="img/gallery/mountainbike16.jpg" alt="mountain bike">
+					</a>
+					<a href="listing.html" title="Item Listing" class="listing-title">Good bike (NEW)</a>
+					<a href="listing.html" title="Item Listing" class="listing-price">$300.00</a>
+					<a href="listing.html" title="Item Listing" class="listing-location">Vancouver</a>
+					<a href="listing.html" title="Item Listing" class="listing-favorite">favorite</a>
+					<a href="listing.html" title="Item Listing" class="listing-time">Last updated: 1 day ago</a>
+				</div>
+
+				<div class="page-nav">
+					<ul>
+						<li><a href="index.html" title="page 1">1</a></li>
+						<li><a href="index.html" title="page 2">2</a></li>
+						<li><a href="index.html" title="page 3">3</a></li>
+						<li><a href="index.html" title="page 4">4</a></li>
+						<li><a href="index.html" title="choose pages">...</a></li>
+						<li><a href="index.html" title="page 10">10</a></li>
+						<li><a href="index.html" title="next page">next</a></li>
+					</ul>
+				</div>
+				
+			</section>
+		</main>
+		<!-- happy styling! -->
+	</body>
+</html>

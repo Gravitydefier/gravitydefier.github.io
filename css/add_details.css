@@ -1,0 +1,219 @@
+/*add details*/
+a:visited {
+	color:white
+}
+
+.step-nav li:nth-child(2) {
+	background: url('../img/icons/stepnav_full.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100px;
+	position: absolute;
+	display: block;
+	padding-top: 70px;
+	left: 45%;
+	top: 140px;
+}
+
+.step-nav li:nth-child(2):hover {
+	background: url('../img/icons/stepnav_full.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100px;
+	
+}
+
+.step-nav li:nth-child(3) {
+	background: url('../img/icons/stepnav_empty.png');
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100px;
+	position: absolute;
+	display: block;
+	padding-top: 50px;
+	left: 65%;
+	top: 140px;
+}
+
+.step-nav li:nth-child(3) a{
+	display: block;
+	margin-top: 24px;
+}
+
+#add-details {
+	position: relative;
+	top: 200px;
+}
+
+#add-details h2 {
+	text-align: center;
+}
+
+#add-details ul {
+	list-style-type: none;
+	border: none;
+}
+
+#forms {
+	margin: auto;
+	margin-top: 50px;
+	width: 70%;
+
+}
+
+#add-details form h2{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #404040;
+	margin-bottom: 0;
+	color: #fafafa;
+}
+
+#forms form {
+	position: relative;
+	padding-bottom: 40px;
+	margin: 0;
+}
+
+fieldset {
+	display: block;
+	background: #626262;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: #fafafa;
+	margin-left: 0;
+	margin-right: 0;
+	border: none;
+}
+
+li label {
+	float: left;
+	width: 100px;
+	margin-right: 20px;
+
+}
+
+fieldset ol {
+	list-style: none;
+	/*padding: 1em 1em, 0, 1em;*/
+}
+
+fieldset li{
+	padding-bottom: 1.5em;
+}
+
+fieldset ol li input {
+	width: 60%;
+	height: 1.5em;
+}
+
+#upload-images fieldset{
+	text-align: center;
+	padding: 20px;
+}
+
+#upload-images fieldset input{
+	display: inline-block;
+	margin: 5px;
+}
+
+#details-label {
+	height: 200px;
+}
+
+.bottom-page-buttons {
+	text-align: center;
+}
+
+.bottom-page-buttons a{
+	display: inline-block;
+	/*margin-left: 50%;*/
+	text-align: center;
+	width: 200px;
+	border-radius: 5px;
+	font-family: Arial;
+	font-size: 1.25em;
+	background: #2E2E2E;
+	margin: 8px 30px 8px 30px;
+	line-height: 2.5em;
+	text-decoration: none;
+	color: white;
+}
+
+.bottom-page-buttons a:hover {
+	background: #878787;
+	color: #101010;
+	/*text-decoration: none;*/
+}
+
+#sidebar {
+	height: 1700px;
+}
+
+@media (max-width: 854px) {
+	#sidebar {
+		height: 1900px;
+	}
+}
+
+@media (max-width: 841px) {
+	#sidebar {
+		height: 2000px;
+	}
+}
+
+@media (max-width: 800px) {
+	#sidebar {
+		height: 1700px;
+	}
+
+	fieldset {
+		display: block;
+		background: #626262;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		color: #fafafa;
+		margin-left: 2px;
+		margin-right: 0;
+		border: none;
+	}
+
+	#upload-images fieldset {
+	    text-align: center;
+	    padding: 5px 0 5px 0;
+	}
+
+	.step-nav li:nth-child(3) {
+		background: url('../img/icons/stepnav_empty.png');
+		background-size: 65%;
+		background-repeat: no-repeat;
+		background-position: top;
+		height: 100px;
+		position: absolute;
+		display: block;
+		padding-top: 50px;
+		left: 80%;
+		top: 140px;
+	}
+}
+
+@media (max-width: 600px) {
+	fieldset {
+		padding: 0;
+	}
+
+	fieldset ol li input {
+		width: 80%;
+		height: 1.5em;
+	}
+
+	#sidebar {
+		height: 2000px;
+	}
+
+}

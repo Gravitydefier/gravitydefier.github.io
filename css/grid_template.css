@@ -1,0 +1,255 @@
+@media (max-width: 800px) {
+
+ 	#category-select {
+		margin-left: 15px;
+	}
+
+
+	#top-header {
+		padding: 10px;
+		padding-bottom: 67px;
+	}
+
+	#top-header a {
+		position: absolute;
+		height: 20px;
+		left: 35%;
+	}
+	
+	#top-header-icon {
+		width: 150px;
+		margin-top: -22px;
+		margin-bottom: -20px
+	}
+
+	/*search bar*/
+	#top-header form {
+		text-align: left;
+		width: 100%;
+		margin-bottom: 10px;
+		margin-left: 35px;
+		padding-bottom: 15px;
+	}
+
+	header form {
+		display:none;
+	}
+
+	.search {
+		margin-top: 20px;
+	  	width: 70%;
+	}
+
+	#top-header-icon {
+		padding-left: 45px;
+		margin-left: 0px;
+		width: 190px;
+	}
+
+	#toggle-searchbar-checkbox {
+		position:absolute;
+		left: 9000px;
+	}
+
+	#toggle-searchbar{
+	    display:none;
+	    position:absolute;
+	}
+
+	#toggle-searchbar + label{
+	    background: url('../img/icons/searchbar_light.png');
+	    background-size: 77px;
+	    background-repeat: no-repeat;
+	    float:right;
+	    margin-right: -20px;
+	    margin-top: -10px;
+    	height: 80px;
+    	width: 80px;
+
+	}
+
+	#toggle-searchbar:hover + label{
+	    background: url('../img/icons/searchbar_hover.png');
+	    background-size: 77px;
+	    background-repeat: no-repeat;
+    	height: 80px;
+    	width: 80px;
+    	float: right;
+	}
+
+	#toggle-searchbar:checked ~ #searchbar{
+	  	display:inline;
+	  	width: 85%;
+	  	margin-top: -5px;
+	  	margin-left: -190px;
+	}
+
+	#toggle-searchbar:checked ~ a{
+	  	display:none
+	}
+
+	.button {
+		display: none;
+	}
+
+	#sidebar {
+		top: 77px;
+	}
+
+	#toggle-sidebar + label{
+    	background: url('../img/icons/hamburger_light_hover_large.png');
+	    top: 0;
+	    background-size: 77px;
+	    background-repeat: no-repeat;
+    	height: 80px;
+    	width: 80px;
+	}
+
+	#toggle-sidebar + label:hover {
+	    background: url('../img/icons/hamburger_dark_hover_large.png');
+	    top: 0;
+	    background-size: 77px;
+	    background-repeat: no-repeat;
+   		height: 80px;
+    	width: 80px;
+	}
+
+	#toggle-sidebar:checked + label {
+		background: url('../img/icons/hamburger_light_hover_large.png');
+	    top: 0;
+	    background-size: 77px;
+	    background-repeat: no-repeat;
+    	height: 80px;
+    	width: 80px;
+	}
+
+	#toggle-sidebar:checked + label:hover{
+		background: url('../img/icons/hamburger_dark_hover_large.png');
+	    top: 0;
+	    background-size: 77px;
+	    background-repeat: no-repeat;
+   		height: 80px;
+    	width: 80px;
+	}
+
+	/*template ends here*/
+
+	/*categories*/
+	section {
+		
+		position: absolute;
+		width: 100%;
+	}
+
+	
+	.step-nav h2{
+		margin-top: -50px;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	.step-nav li{
+		position: absolute;
+		white-space: nowrap;
+	}
+
+	.step-nav li:nth-child(1) {
+		left: 5%;
+		top: 140px;
+	}
+
+	.step-nav li:nth-child(2) {
+		left: 43%;
+		top: 140px;
+	}
+
+	.step-nav li:nth-child(3) {
+		left: 85%;
+		top: 140px;
+	}
+
+	.bottom-page-buttons {
+		text-align: center;
+		margin-left: 0;
+		margin-top: 2em;
+	}
+	.bottom-page-buttons a{
+		display: inline-block;
+		text-align: center;
+		width: 200px;
+		border-radius: 5px;
+		font-family: Arial;
+		font-size: 1.25em;
+		background: #2E2E2E;
+		margin: 8px 30px 8px 30px;
+		line-height: 2.5em;
+		text-decoration: none;
+		color: white;
+	}
+
+	/*Add Details*/
+
+	.step-nav-add-details {
+		background: #D5D8DB;
+		margin-left: 0;
+	}
+
+	#add-details form h2{
+		padding: 0.5em;
+		margin-left: 2px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	#top-header-icon {
+		padding-left: 45px;
+		margin-left: -25%;
+		margin-top: -20px;
+		width: 180px;
+	}
+
+	#toggle-searchbar:checked ~ #searchbar{
+	  	display:inline;
+	  	width: 75%;
+	  	margin-top: -5px;
+	  	margin-left: -190px;
+	}
+
+	.step-nav li:nth-child(2) {
+		left: 40%;
+		top: 140px;
+	}
+
+	.step-nav li:nth-child(3) {
+		left: 75%;
+		top: 140px;
+	}
+
+	/*template ends here*/
+}
+
+
+@media (max-width: 400px) {
+	#top-header-icon {
+		padding-left: 45px;
+		margin-left: -3px;
+		margin-top: -15px;
+		width: 160px;
+	}
+
+	#top-header a {
+		position: absolute;
+		height: 20px;
+		left: 15%;
+	}
+
+	#toggle-searchbar:checked ~ #searchbar{
+	  	display:inline;
+	  	width: 55%;
+	  	margin-top: -5px;
+	  	margin-left: -190px;
+	}
+
+	/*template ends here*/
+}

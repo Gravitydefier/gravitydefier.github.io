@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Add Details</title>
+		<link type="text/css" rel="stylesheet" href="css/header_sidebar.css"/>
+		<link type="text/css" rel="stylesheet" href="css/grid_template.css"/>
+		<link type="text/css" rel="stylesheet" href="css/add_details.css"/>
+	</head>
+
+	<body>
+	<!-- This part of the html is the top header of the page. It has an id of #top-header -->
+		
+		<!-- This part of the html is the top header of the page. It has an id of #top-header -->
+		<header id="top-header">
+
+			<input id="toggle-searchbar" type="checkbox"/>
+        		<label for="toggle-searchbar"><span id="toggle-searchbar-checkbox">toggle searchbar</span></label>
+        		
+			<a href="index.html" title="Main Page">
+				<img id="top-header-icon" src="img/icons/site_icon_white.png" alt="Website icon">
+			</a>
+
+			
+			<form id="searchbar">
+				<input class="search" type="text" placeholder="search" required>
+				<input class="button" type="button" value="search">
+			</form>
+
+			</header>
+
+		<!-- This part of the html contains the sidebar. It has an id of #sidebar -->
+		<input id="toggle-sidebar" type="checkbox"/>
+        		<label for="toggle-sidebar"><span id="toggle-checkbox">toggle sidebar</span></label>
+
+		<!-- This part of the html contains the sidebar. It has an id of #sidebar -->
+		<aside id="sidebar">
+		
+			<h1>Create a Listing</h1>
+
+			<nav id="post-buttons">
+				<a href="index.html" title="Main Page" class="button-nav">My Account</a><br>
+				<a href="index.html" title="Main Page" class="button-nav">Favorites</a><br>
+			</nav> 
+			
+			<nav id="site-info">
+				<a href="index.html" title="Main Page"><h2>Site Info</h2></a>
+				<ul>
+					<li><a href="index.html" title="Main Page">safety tips</a></li>
+					<li><a href="index.html" title="Main Page">prohibited items</a></li>
+					<li><a href="index.html" title="Main Page">product recalls</a></li>
+					<li><a href="index.html" title="Main Page">avoiding scams</a></li>
+				</ul>
+			</nav>
+		</aside>
+	
+
+	<section >
+		<nav class="step-nav">
+						
+			<h2>Step 2 of 3</h2>
+			<ul>
+				<li><a href="categories.html" title="Choose categories">Choose<br> Categories</a></li>
+				<li>Additional<br> Details</li>
+				<li><a href="post_confirm.html" title="Confirm Listing">Confirm<br> Listing</a></li>
+			</ul>
+		</nav>
+		
+		<div id="add-details">
+
+		<h2>Please fill out any additional details for your listing.</h2>
+
+		<div id="forms">
+			<form>
+				<h2 class="clickable-header">Item Details</h2>
+				<fieldset class="collapsible-menu">
+					<ol>
+						<li><label for="title-label">Title:*</label>
+							<input name="title" id="title-label" type="text"></li>
+						<li><label for="price-label">Price:</label>
+							<input name="price" id="price-label" type="text"></li>
+						<li><label for="details-label">Details:*</label>
+							<input name="details" id="details-label" type="text" ></li>
+						<li><label for="size-label">Size:</label>
+							<input name="size" id="size-label" type="text"></li>
+						<li><label for="condition-label">Condition:</label>
+							<input name="condition" id="condition-label" type="text"></li>
+					</ol>
+
+					<!-- <div id="item_details_instructions">
+						<p>Fields marked with an asterisk(*) are required.</p>
+					</div> -->
+
+				</fieldset>
+			</form>
+
+			<div id ="upload-images">
+				<form action="upload.php" method="post" enctype="multipart/form-data">
+					<h2 class="clickable-header">Images</h2>
+					<fieldset class="collapsible-menu">
+						
+							<p>Select image to upload:</P>
+							<input type="file" name="fileToUpload" id="fileToUpload">
+							<input type="submit" value="Upload Image" name="submit">
+						
+					</fieldset>
+				</form>
+			</div>
+
+			<form>
+				<h2 class="clickable-header">Contact Info</h2>
+				<fieldset class="collapsible-menu">
+						<ol>
+							<li><label for="email-label">Email:*</label>
+								<input name="email" id="email-label" type="text"></li>
+							<li><label for="verify-email-label">Verify Email:*</label>
+								<input name="verify-email" id="verify-email-label" type="text"></li>
+							<li><label for="name-label">Name:</label>
+								<input name="name" id="name-label" type="text"></li>
+							<li><label for="phone-label">Phone:</label>
+								<input name="phone" id="phone-label" type="text"></li>
+							<li><label for="pickup-address-label">Pickup Address:*</label>
+								<input name="pickup-address" id="pickup-address-label" type="text"></li>
+						</ol>
+				</fieldset>
+			</form>
+		</div>
+
+		<nav class="bottom-page-buttons">
+			<a href="categories.html" title="Choose-categories">Previous</a>
+			<a href="post_confirm.html" title="Confirm-Listing">Next</a>
+		</nav>
+	</div>
+		</section>
+	</body>
+</html>

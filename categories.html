@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Choose Categories</title>
+		<link type="text/css" rel="stylesheet" href="css/header_sidebar.css"/>
+		<link type="text/css" rel="stylesheet" href="css/grid_template.css"/>
+		<link type="text/css" rel="stylesheet" href="css/categories.css"/>
+	</head>
+
+	<body>
+		<!-- This part of the html is the top header of the page. It has an id of #top-header -->
+		<header id="top-header">
+
+			<input id="toggle-searchbar" type="checkbox"/>
+        		<label for="toggle-searchbar"><span id="toggle-searchbar-checkbox">toggle searchbar</span></label>
+        		
+			<a href="index.html" title="Main Page">
+				<img id="top-header-icon" src="img/icons/site_icon_white.png" alt="Website icon">
+			</a>
+
+			
+			<form id="searchbar">
+				<input class="search" type="text" placeholder="search" required>
+				<input class="button" type="button" value="search">
+			</form>
+			
+		</header>
+
+		<input id="toggle-sidebar" type="checkbox"/>
+        		<label for="toggle-sidebar"><span id="toggle-checkbox">toggle sidebar</span></label>
+
+		<!-- This part of the html contains the sidebar. It has an id of #sidebar -->
+
+		<aside id="sidebar">
+		
+			<h1>Create a Listing</h1>
+
+			<nav id="post-buttons">
+				<a href="index.html" title="Main Page" class="button-nav">My Account</a><br>
+				<a href="index.html" title="Main Page" class="button-nav">Favorites</a><br>
+			</nav> 
+			
+			<nav id="site-info">
+				<a href="index.html" title="Main Page"><h2>Site Info</h2></a>
+				<ul>
+					<li><a href="index.html" title="Main Page">safety tips</a></li>
+					<li><a href="index.html" title="Main Page">prohibited items</a></li>
+					<li><a href="index.html" title="Main Page">product recalls</a></li>
+					<li><a href="index.html" title="Main Page">avoiding scams</a></li>
+				</ul>
+			</nav>
+		</aside>
+	
+
+	<section>
+		<nav class="step-nav">		
+			<h2>Step 1 of 3</h2>
+			<ul>
+				<li><p>Choose<br> Categories</p></li>
+				<li><a href="add_details.html" title="Additional Details">Additional<br> Details</a></li>
+				<li><a href="post_confirm.html" title="Confirm Listing">Confirm<br> Listing</a></li>
+			</ul>
+		</nav>
+
+			<h2 id="instructions">Select the location and category which your item fits best in:</h2>
+
+		<div id="all-dropdowns">
+			<div id="location-dropdown">
+				<h2>Location</h2 >
+				<div class="sub-dropdowns" >
+			    	<ul>
+						
+						<li><input type="radio" name="Location" value="Belcarra">Belcarra</li>
+						<li><input type="radio" name="Location" value="Burnaby">Burnaby</li>	
+						<li><input type="radio" name="Location" value="Coquitlam">Coquitlam</li>
+						<li><input type="radio" name="Location" value="Delta">Delta</li>	
+						<li><input type="radio" name="Location" value="Langley">Langley</li>
+						<li><input type="radio" name="Location" value="Maple Ridge">Maple Ridge</li>	
+						<li><input type="radio" name="Location" value="New Westminster">New Westminster</li>	
+						<li><input type="radio" name="Location" value="North Vancouver">North Vancouver</li>	
+						<li><input type="radio" name="Location" value="Pitt Meadows">Pitt Meadows</li>	
+						<li><input type="radio" name="Location" value="Port Coquitlam">Port Coquitlam</li>	
+						<li><input type="radio" name="Location" value="Port Moody">Port Moody</li>	
+						<li><input type="radio" name="Location" value="Richmond">Richmond</li>	
+						<li><input type="radio" name="Location" value="Surrey">Surrey</li>
+						<li><input type="radio" name="Location" value="Tsawwassen">Tsawwassen</li> 
+						<li><input type="radio" name="Location" value="Vancouver">Vancouver</li>	
+						<li><input type="radio" name="Location" value="West Vancouver">West Vancouver</li>	
+						<li><input type="radio" name="Location" value="White Rock">White Rock</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="category-dropdown">
+				<h2>Category</h2>
+				<div class="sub-dropdowns" >
+				    <ul>
+				    	<li><input type="radio" name="Category" value="Appliances">Appliances</li>
+				    	<li><input type="radio" name="Category" value="Bicycles">Bicycles</li>
+				    	<li><input type="radio" name="Category" value="Books">Books</li>
+						<li><input type="radio" name="Category" value="Clothing and Accessories">Clothing</li>
+				    	<li><input type="radio" name="Category" value="Collectibles">Collectibles</li>
+						<li><input type="radio" name="Category" value="Electronics">Electronics</li>
+						<li><input type="radio" name="Category" value="Free">Free</li>
+						<li><input type="radio" name="Category" value="Furniture">Furniture</li>
+						<li><input type="radio" name="Category" value="Household">Household</li>
+						<li><input type="radio" name="Category" value="Materials">Materials</li>
+					    <li><input type="radio" name="Category" value="Sporting Goods">Sporting Goods</li>
+					    <li><input type="radio" name="Category" value="Tickets">Tickets</li>
+					    <li><input type="radio" name="Category" value="Tools">Tools</li>
+					    <li><input type="radio" name="Category" value="Toys and Games">Toys and Games</li>
+						<li><input type="radio" name="Category" value="Vehicles">Vehicles</li>
+						<li><input type="radio" name="Category" value="Video Games">Video Games</li>
+					    <li><input type="radio" name="Category" value="Other">Other</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<nav class="bottom-page-buttons">
+			<a href="add_details.html" title="Confirm-Listing">Next</a>
+		</nav>
+
+	</section>
+	</body>
+</html>
